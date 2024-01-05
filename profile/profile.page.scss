@@ -1,0 +1,428 @@
+ion-header {
+    .edit_btn {
+        --background: var(--ion-color-white);
+        --background-activated: var(--ion-color-white);
+        --color: #FFA737;
+        font-size: 10px;
+        position: absolute;
+        right: 16px;
+        z-index: 1111;
+        top: 165px;
+        --padding-start: 0;
+        --padding-end: 0;
+        height: 20px;
+        width: 60px;
+        --border-radius: 3px;
+        display: flex;
+        --box-shadow: none;
+        --ripple-color: none;
+        --color-activated: none;
+        ion-icon {
+            margin-right: 5px;
+        }
+    }
+    .profile-container {
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+    }
+    ion-toolbar {
+        // height: 200px;
+        --background: #FFA737;
+        --background: transparent;
+        --ion-color-base: transparent !important;
+        background-size: 100% 100%;
+        .start_btn {
+            position: absolute;
+            top: 18px;
+            ion-back-button {
+                --color: var(--ion-color-white);
+            }
+        }
+        .end_btn {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+        }
+        ion-buttons {
+            ion-menu-button {
+                color: var(--ion-color-white) !important;
+            }
+            ion-button {
+                color: #FFA737 !important;
+            }
+        }
+        .image_div {
+            padding-top: 35px;
+            position: relative;
+            .camera_div {
+                height: 24px;
+                width: 24px;
+                background-color: #FFA737;
+                position: absolute;
+            }
+        }
+    }
+    .name_div{
+        margin-left: 10px;
+        text-align: left !important;
+        width: 100%;
+    }
+    .name_div {
+        .name {
+            font-size: 22px;
+            font-family: "Poppins-SemiBold";
+            color: #000;
+            margin-bottom: 0px;
+            margin: 0;
+        }
+        .location {
+            font-size: 16px;
+            font-family: "Poppins-Regular";
+            color: var(--ion-color-darkgray);
+            margin-top: 2px;
+            ion-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+    .btn_div {
+        height: 60px;
+        background-color: var(--ion-color-sky);
+        display: flex;
+        overflow-y: auto;
+        padding-left: 16px;
+        margin-bottom: 20px;
+        ion-button {
+            height: 33px !important;
+            --border-radius: 2px;
+            font-size: 14px;
+            font-family: "Poppins-Medium";
+            margin-right: 30px;
+            align-self: center;
+            --box-shadow: none;
+            --ripple-color: none;
+            --color-activated: none;
+        }
+        .active {
+            --background: #FFA737;
+            --background-activated: #FFA737;
+            --color: var(--ion-color-white);
+        }
+        .segment_btn {
+            --background: var(--ion-color-white);
+            --background-activated: var(--ion-color-white);
+            --color: var(--ion-color-darkBlue);
+        }
+    }
+    .btn_div::-webkit-scrollbar {
+        display: none;
+    }
+    .profile-image {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: 2px solid var(--ion-color-orange);
+        position: relative;
+        z-index: 111119;
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            // border: 3px solid var(--ion-color-white);
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+        }
+        .active {
+            height: 24px;
+            width: 24px;
+            background-color: #FFA737;
+            position: absolute;
+            right: 4px;
+            bottom: 0px;
+            border-radius: 50%;
+            border: 2px solid var(--ion-color-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.16);
+            ion-icon {
+                height: 12px;
+                width: 12px;
+            }
+        }
+        .shadow {
+            -webkit-filter: drop-shadow(0px 0px 2px #000000d6);
+        }
+    }
+}
+
+ion-content {
+    .img {
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    }
+    .segment {
+        height: 60px;
+        padding-left: 16px;
+        ion-button {
+            height: 33px !important;
+            --border-radius: 2px;
+            font-size: 14px;
+            font-family: "Poppins-Medium";
+            margin-right: 30px;
+            align-self: center;
+            --box-shadow: none;
+            --ripple-color: none;
+            --color-activated: none;
+        }
+        .active {
+            --background: #FFA737;
+            --background-activated: #FFA737;
+            --color: var(--ion-color-white);
+        }
+        .segment_btn {
+            --background: var(--ion-color-white);
+            --background-activated: var(--ion-color-white);
+            --color: var(--ion-color-darkBlue);
+        }
+    }
+    .review_div {
+        margin-bottom: 15px;
+    }
+    .profile_div {
+        margin-bottom: 15px;
+    }
+    .review_item {
+        ion-avatar {
+            align-self: baseline;
+            img {
+                border: solid 3px var(--ion-color-white);
+                box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.6);
+            }
+        }
+        ion-label {
+            white-space: normal;
+            .name {
+                font-size: 12px;
+                font-family: "Poppins-Medium";
+                color: var(--ion-color-darkBlue);
+                margin: 0;
+            }
+            .ago {
+                font-size: 10px;
+                font-family: "Poppins-Medium";
+                color: var(--ion-color-darkgray);
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+            .detail {
+                font-size: 10px;
+                font-family: "Poppins-Regular";
+                color: var(--ion-color-darkgray);
+                margin: 0;
+                line-height: 15px;
+            }
+            .first_icon {
+                color: #FFA737;
+            }
+            .last_icon {
+                color: var(--ion-star-color);
+            }
+        }
+    }
+    .photo_div {
+        margin: 0px 15px;
+        img {
+            border-radius: 5px;
+            margin-bottom: 6px;
+        }
+    }
+    .profile_div {
+        .profile_item {
+            margin: 0 20px;
+            --padding-start: 0px;
+            --padding-end: 0px;
+            border-bottom: dashed 1px var(--ion-border-color);
+            .tittle {
+                font-size: 16px;
+                font-family: "Poppins-Medium";
+                color: gray;
+            }
+            .data {
+                font-size: 14px;
+                font-family: "Poppins-Medium";
+                color: var(--ion-color-darkBlue);
+            }
+        }
+        .save_btn {
+            --background: #FFA737;
+            margin-left: 16px;
+            margin-top: 16px;
+        }
+    }
+    .setting_div {
+        margin-bottom: 10px;
+        .setting_item {
+            margin: 0 20px;
+            --padding-start: 0px;
+            --padding-end: 0px;
+            --inner-padding-end: 0px;
+            border-bottom: dashed 1px var(--ion-border-color);
+            .tittle {
+                font-size: 14px;
+                font-family: "Poppins-Medium";
+                color: var(--ion-color-darkBlue);
+            }
+            ion-toggle {
+                --background-checked: #FFA737;
+                --handle-background-checked: var(--ion-color-white);
+            }
+            .address {
+                font-size: 12px;
+                font-family: "Poppins-Medium";
+                color: #FFA737;
+                width: 100%;
+                .trans-btn {
+                    font-size: 8px;
+                    --color: #FFA737;
+                    text-transform: capitalize;
+                }
+            }
+            .change {
+                font-size: 14px;
+                font-family: "Poppins-Medium";
+                color: var(--ion-color-darkBlue);
+            }
+        }
+    }
+}
+
+.masonry-group {
+    column-count: 2;
+    column-fill: balance;
+}
+
+.masonry-item {
+    width: 100%;
+}
+
+ion-fab-button {
+    --background: #FFA737;
+    --box-shadow: none;
+}
+
+.err {
+    padding-left: 16px;
+}
+.otp_btn{
+    --background: #FFA737;
+}
+
+.panel-heading{
+    padding: 0;
+    height: 50px;
+    background: #fff;
+    position: relative;
+}
+.panel-title a{
+    padding: 15px 10px;
+    width: 100%;
+    height: 50px;
+    // top: 5px;
+    position: absolute;
+    text-decoration: none;
+    transition: 0.6s ease all;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+}
+.panel{
+    background: #FFFFFF;
+    /* border: none; */
+    margin: 8px;
+    /* margin-bottom: 0px; */
+    box-shadow: none;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+     border-top-color: #fff;
+     padding: 0;
+ 
+}
+.fa-chevron-down{
+    float: right;
+    transition: 0.6s ease all;
+}
+a[aria-expanded="true"]{
+    // background: aliceblue;
+}
+ a[aria-expanded="true"] .fa-chevron-down{
+    transform: rotate(180deg);
+}
+ion-label{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+.close{
+    padding: 10px;
+    font-size: 25px;
+}
+ion-toolbar{
+    padding: 15px 9px 0px;
+}
+.loading{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+.name_div{
+    padding: 0px;
+    text-align: left;
+}
+.name_div .name{
+    margin-bottom: 3px;
+}
+.name_div label{
+    margin-bottom: 0;
+    color: gray;
+    font-weight: 400;
+}
+ul{
+    margin: 0;
+    padding: 0px 10px;
+}
+li{
+    list-style: none;
+    padding: 7px;
+    /* padding-top: 7px; */
+    font-size: 17px;
+    color: gray;
+}
+li .fa-chevron-down{
+    transform: rotate(-90deg);
+}
+.right {
+    float: right;
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.left {
+    float: left;
+    width: 50%;
+}
+.right label{
+    color: #FFA737;
+    font-weight: 600;
+}
