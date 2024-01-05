@@ -1,0 +1,200 @@
+ion-content {
+    .status {
+        font-size: 12px;
+        font-family: "Poppins-Medium";
+        color: var(--ion-color-green);
+        align-self: center;
+    }
+    .main_heading {
+        font-size: 16px;
+        font-family: "WorkSans-Medium";
+        color: var(--ion-color-darkBlue);
+    }
+    .card_div {
+        border-radius: 5px;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
+        padding: 5px 10px 20px 10px;
+        margin-bottom: 20px;
+        ion-item {
+            padding-top: 10px;
+            --padding-start: 0px;
+            --inner-padding-end: 0;
+            margin-bottom: 10px;
+            border-bottom: dashed 1px var(--ion-border-color);
+            padding-bottom: 10px;
+            img {
+                border-radius: 3px;
+                height: 56px;
+                width: 56px;
+            }
+            .status {
+                font-size: 12px;
+                font-family: "Poppins-Medium";
+                color: var(--ion-color-green);
+                align-self: center;
+            }
+            ion-label {
+                margin-left: 10px;
+                margin-bottom: 0px;
+                margin-top: 2px;
+                .name {
+                    font-size: 14px;
+                    font-family: "Poppins-Medium";
+                    color: var(--ion-color-darkBlue);
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .address {
+                    font-size: 10px;
+                    font-family: "Poppins-Regular";
+                    color: var(--ion-color-darkgray);
+                    line-height: 13px;
+                    width: 160px;
+                }
+            }
+        }
+        .menu {
+            font-size: 12px;
+            font-family: "Poppins-Medium";
+            color: var(--ion-color-darkgray);
+        }
+        .order {
+            color: var(--ion-color-darkBlue);
+            font-size: 12px;
+            font-family: "Poppins-Medium";
+        }
+        .order_btn {
+            --color: var(--ion-color-red);
+            font-size: 12px;
+            --color-activated: none;
+            --background-activated: none;
+            --ripple-color: var(--ion-color-white);
+            --background-focused: none;
+        }
+    }
+}
+
+.item.sc-ion-label-md-h,
+.item .sc-ion-label-md-h {
+    white-space: normal !important;
+}
+
+.item.sc-ion-label-ios-h,
+.item .sc-ion-label-ios-h {
+    white-space: normal !important;
+}
+.order-card {
+    padding: 10px;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.horizontal-div{
+    display: flex;
+    justify-content: space-between;
+}
+.shop-name{
+    font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.408px;
+
+color: #000000;
+}
+.order-no {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.408px;
+    color: #50555C;
+}
+.item-name, .amount {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.408px;
+}
+.buttons{
+    margin-top: 10px;
+}
+button.btn.reorder-btn {
+    background: #FFA737;
+    border: 1px solid #FFA737;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+    // margin: 3px;
+    color: #fff;
+   
+}
+.cancel-btn{
+    background: #FFFFFF;
+    border: 1px solid #50555C;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+    // margin: 3px;
+}
+.heading {
+    margin: 10px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.order-div{
+    margin: 10px;
+}
+p.order {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000000;
+}
+ion-skeleton-text.date {
+    width: 60%;
+    margin-left: 10px;
+}
+ion-skeleton-text.order-name {
+    width: 40%;
+}
+ion-skeleton-text.order-no {
+    width: 26%;
+}
+ion-skeleton-text.order-qnty {
+    width: 30%;
+}
+ion-skeleton-text.order-payment {
+    width: 20%;
+}
+ion-skeleton-text.order-button {
+    height: 30px;
+    border-radius: 7px;
+    padding: 0;
+    margin: 0;
+}
